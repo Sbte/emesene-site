@@ -4,14 +4,4 @@ layout: post
 title: Weekend update
 time: 2009-04-13 03:52:00 +02:00
 ---
-I've been a little lazzy this weekend but I've added some code/features to emesene.<br /><br />the high level stuff: trayicon! :D<br /><br />the low level stuff:<br /><br />* now the signals are independent of gobject, they use the gui.Signal implementation (simple but enough for now). That means that some implementation that doens't use gobject won't need to use it<br />* added imports for dgb on all the modules that use it so I can profile the application<br />* removed gstreamer on the sound extension because it ate all the cpu<br />* fixed a bug when someone sent messages using \r\n insted of \n<br />* removed the sound when you opened a conversation<br /><br />the low level stuff needed a lot of refactoring, that is why you don't see a lot of changes, but a lot of code was moved/removed/written.<br /><br />as all the stuff on emesene 2 the tray icon implementation is an extension so you can change it with your own. I will write a post about how to do it when I have some time.<br /><br />PS: I know notifications, blinking trayicon and so on :)<div class="blogger-post-footer"><script type="text/javascript"><!--
-google_ad_client = "pub-7085255688477101";
-/* 336x280, creado 19/04/09 */
-google_ad_slot = "4169844387";
-google_ad_width = 336;
-google_ad_height = 280;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/28704147-1388325585844428759?l=blog.emesene.org' alt='' /></div>
+I've been a little lazzy this weekend but I've added some code/features to emesene.<br /><br />the high level stuff: trayicon! :D<br /><br />the low level stuff:<br /><br />* now the signals are independent of gobject, they use the gui.Signal implementation (simple but enough for now). That means that some implementation that doens't use gobject won't need to use it<br />* added imports for dgb on all the modules that use it so I can profile the application<br />* removed gstreamer on the sound extension because it ate all the cpu<br />* fixed a bug when someone sent messages using \r\n insted of \n<br />* removed the sound when you opened a conversation<br /><br />the low level stuff needed a lot of refactoring, that is why you don't see a lot of changes, but a lot of code was moved/removed/written.<br /><br />as all the stuff on emesene 2 the tray icon implementation is an extension so you can change it with your own. I will write a post about how to do it when I have some time.<br /><br />PS: I know notifications, blinking trayicon and so on :)
