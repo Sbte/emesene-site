@@ -1,0 +1,17 @@
+--- 
+name: how-to-test-development-versions-of
+layout: post
+title: How to test development versions of emesene?
+time: 2009-01-04 01:16:00 +01:00
+---
+If you want to test development versions of emesene, then this is your post! :P<br /><br />A development version is one that is not yet released, and can be on different stages, for instance:<br /><br /><ul><li>Alpha versions: not all the features available, unstable</li><li>Beta versions: almost all the features there, needs testing.</li><li>Release candidate: will become final version if no big bugs are found during testing.</li></ul>on emesene we have a stable version (1.0.x), an unstable version (1.1.x) and an alpha version (code name mesinyer, a.k.a emesene 2).<br /><br />All those versions are stored on our <a href="http://en.wikipedia.org/wiki/Version_control_system">version control system</a> that can be found on sourceforge (http://emesene.svn.sourceforge.net/viewvc/emesene/).<br /><br />to test one of this versions you need to have a  <a href="http://en.wikipedia.org/wiki/Subversion_%28software%29">subversion</a> client installed.<br /><br />on linux you can install it from your repositories, something like<br /><br />sudo aptitude install subversion<br />su -<br />yum install subversion<br /><br />and so on..<br /><br />on windows you can download a really nice client called <a href="http://tortoisesvn.tigris.org/">tortoise svn</a><br /><br />the first thing you need to do is to download the version you want to test, the 3 versions above are located at:<br /><br /><ul><li>emesene 1.0.x: http://emesene.svn.sourceforge.net/viewvc/emesene/tags/emesene-1.0/<br /></li><li>emesene 1.1.x: http://emesene.svn.sourceforge.net/viewvc/emesene/trunk/emesene/<br /></li><li>emesene 2: http://emesene.svn.sourceforge.net/viewvc/emesene/trunk/mesinyer</li></ul>these URLs are used to view the repositories.<br /><br />on linux you run the "checkout" command that downloads the sourcecode for the first time:<br /><br /><pre class="wiki">svn co http://emesene.svn.sourceforge.net/svnroot/emesene/tags/emesene-1.0/ emesene-1-x<br /><br />svn co https://emesene.svn.sourceforge.net/svnroot/emesene/trunk/emesene emesene<br /><br />svn co https://emesene.svn.sourceforge.net/svnroot/emesene/trunk/mesinyer emesene2<br /><br /></pre>depending on which version you want to download.<br /><br />now that you have the code, cd to the folder and run emesene<br /><ul><li>python Controller.py # to run emesene 1</li><li>python emesene.py # to run emesene 2</li></ul>once in a while you may want to update the folder, that means, to download all the changes that where made to the repository. To make that, cd into the folder and then do:<br /><br />svn up<br /><br />that will update all the files.<div class="blogger-post-footer"><script type="text/javascript"><!--
+google_ad_client = "pub-7085255688477101";
+/* 336x280, creado 19/04/09 */
+google_ad_slot = "4169844387";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/28704147-4011973823292309842?l=blog.emesene.org' alt='' /></div>

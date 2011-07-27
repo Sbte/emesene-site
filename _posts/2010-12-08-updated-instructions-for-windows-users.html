@@ -1,0 +1,17 @@
+--- 
+name: updated-instructions-for-windows-users
+layout: post
+title: updated instructions for windows users (still no package)
+time: 2010-12-08 19:10:00 +01:00
+---
+I tryied to make the msn backend work on windows and I updated the instructions on the readme in emesene.<br /><br />the new stuff is related to the papyon backend for msn that now is the only supported backend and has some dependencies (OpenSSL, pyCrypto) and those need to be installed.<br /><br />to make both instructions similar I recommend that you download and install msysgit from here:<br /><br /><a href="http://code.google.com/p/msysgit/">http://code.google.com/p/msysgit/</a><br /><br />and follow the instructions from here:<br /><br /><a href="http://emesene-msn.blogspot.com/2010/10/instructions-for-testers.html">http://emesene-msn.blogspot.com/2010/10/instructions-for-testers.html</a><br /><br />until you downloaded emesene code and updated the submodules, then follow the instructions in the INSTALL_WINDOWS.txt file here is an updated version:<br /><br /><br /><a href="https://github.com/marianoguerra/emesene/blob/master/INSTALL_WINDOWS.txt">https://github.com/marianoguerra/emesene/blob/master/INSTALL_WINDOWS.txt</a><br /><br />I got emesene to run using papyon with this setup but the portable version gave me protocol error, if you can find the way to fix it it would be great.<br /><br />still waiting for packages...<br /><br /><b>EDIT: </b>I forgot to add one instruction, before running python <i>setup.py py2exe</i> you need to copy the papyon folder that is in emesene/emesene/e3/papylib/papyon/papyon to emesene/emesene/papyon, something like:<br /><br />cp -r emesene/emesene/e3/papylib/papyon/papyon emesene/emesene/<br /><br />to avoid the import error trying to load papyon.<div class="blogger-post-footer"><script type="text/javascript"><!--
+google_ad_client = "pub-7085255688477101";
+/* 336x280, creado 19/04/09 */
+google_ad_slot = "4169844387";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/28704147-1016933819218833090?l=blog.emesene.org' alt='' /></div>

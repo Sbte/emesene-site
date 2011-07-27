@@ -1,0 +1,17 @@
+--- 
+name: workers-day-update
+layout: post
+title: Worker's day update
+time: 2009-05-01 07:35:00 +02:00
+---
+Today I had time to code emesene 2, this are the results:<br /><br /><ul><li>fixed the problem getting notifications on login</li><li>now all the contacts are displayed on the contact list (you don't need to refresh to make some change the status)</li><li>the emoticon window is closed when the mouse leaves the window for more than a half second</li><li>the tabs now have widgets that look better (check the code quiz below to help me fix the close button!)</li><li>the input box on the conversation window is smaller now</li><li>implemented a dummy e3 protocol to be able to test emesene 2 without the need to login and wait.</li></ul><br /><br />The most interesting of all the new features is the last one, using the e3 architecture that allows to add support to new protocols easily I implemented a dummy protocol that basically returns succeed events on all the requests, it contains a userlist with dummy contacts and groups and when you chat with someone some random contact replies you with the same message.<br />This dummy protocol is nice because of two things:<br />1) it let me test the gui without login in in msn or gtalk (that means no waiting for login), I can also code when I have no internet connection or I'm behind a closed network (like the one from my university).<br />2) it shows how easy is to start implementing a new protocol and can help people to understand e3 and make it easy to start hacking the msn or jabber implementations.<br /><br />if you want to test the dummy protocol, on the login window open the preference dialog (on the bottom right corner) and select the dummy session, then login with some random user and password and start pressing all the buttons to make the bugs appear.<br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_cxEYagC8foY/SOUxa9yRjHI/AAAAAAAABzg/SpJ9Vz4AOMk/s320/Portishead_dummy.jpg"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 300px; height: 298px;" src="http://4.bp.blogspot.com/_cxEYagC8foY/SOUxa9yRjHI/AAAAAAAABzg/SpJ9Vz4AOMk/s320/Portishead_dummy.jpg" border="0" alt="" /></a><div class="blogger-post-footer"><script type="text/javascript"><!--
+google_ad_client = "pub-7085255688477101";
+/* 336x280, creado 19/04/09 */
+google_ad_slot = "4169844387";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/28704147-7068027624468600588?l=blog.emesene.org' alt='' /></div>

@@ -1,0 +1,17 @@
+--- 
+name: request-implemented
+layout: post
+title: A request implemented
+time: 2009-01-21 02:05:00 +01:00
+---
+an user asked to allow custom group sorting, another asked to sort the users by log size, so i implemented a new feature on the contact list that allows to provide "weights" to the users and groups to override the default order, if an user has more "weight" than another group, then it will be above the other, the same works for contacts, so you can change the weights by hand or use a plugin to calculate the weights for you.<br /><br />a screenshot showing the feature is here:<br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_XkKIWh0VZYk/SXZ2cMgdCKI/AAAAAAAAGAg/6OEaVvU5mt8/s1600-h/custom-order.png"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 209px; height: 400px;" src="http://2.bp.blogspot.com/_XkKIWh0VZYk/SXZ2cMgdCKI/AAAAAAAAGAg/6OEaVvU5mt8/s400/custom-order.png" alt="" id="BLOGGER_PHOTO_ID_5293548638786357410" border="0" /></a>as you can see, the group Otros is over the top and then comes emesene, the common order should be Amigos, (other groups..), Otros, (other groups..), emesene. also Roger is on the top of the group, and then comes dx, is easy to see there since they should be ordered first by status and then by display name.<br /><br />This feature can be used to "sink" users you don't want to see assigning negative values ;)<br /><br />take into account that I only implemented the feature on the contact list and the store/load from the config, no gui available (yet) to modify the weights.<br />I will implement it in some days I guess, right now I'm advancing on a personal project (I hope you hear about it in the next months ;)<div class="blogger-post-footer"><script type="text/javascript"><!--
+google_ad_client = "pub-7085255688477101";
+/* 336x280, creado 19/04/09 */
+google_ad_slot = "4169844387";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/28704147-845709216841479595?l=blog.emesene.org' alt='' /></div>

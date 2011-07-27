@@ -1,0 +1,17 @@
+--- 
+name: do-you-use-mac-os-x-want-to-help
+layout: post
+title: do you use mac os x? want to help emesene? want to be the creator of a plugin? here is some help
+time: 2011-06-21 14:13:00 +02:00
+---
+itunes needs a "currently playing" plugin<br /><br />let's do this, I give you almost the complete recipe, you build it as a plugin and everyone is happy<br /><br />on the shell:<br /><br /><pre>sudo pip install appscript<br />python<br /></pre><br />now on the python shell:<br /><br /><pre>>>> import appscript<br />>>> itunes = appscript.app('iTunes')<br />>>> current_track = itunes.current_track<br />>>> current_track.name.get()<br />u'Temporary Like Achilles'<br />>>> current_track.artist.get()<br />u'Bob Dylan'<br />>>> current_track.album.get()<br />u'Blonde on Blonde'<br /></pre><br />now fetch emesene's code, see how the other "current playing" plugins are made, create the itunes version and send us a pull request!<div class="blogger-post-footer"><script type="text/javascript"><!--
+google_ad_client = "pub-7085255688477101";
+/* 336x280, creado 19/04/09 */
+google_ad_slot = "4169844387";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/28704147-5675082035248129928?l=blog.emesene.org' alt='' /></div>
