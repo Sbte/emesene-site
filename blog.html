@@ -4,7 +4,13 @@ title: Screenshots
 ---
 
     {% for post in site.posts %}
-      <span>{{ post.date | date_to_string }}</span>
-      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      {{ post.content }}
+      {% if forloop.index <= 20 %}
+        <span>{{ post.date | date_to_string }}</span>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {{ post.content }}
+      {% else %}
+        <ul>
+          <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        </ul>
+      {% endif %}
     {% endfor %}

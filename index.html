@@ -3,12 +3,12 @@ layout : default
 title: Home
 ---
 <div class='post'>
-    {{ post.date | date_to_string }}
-    <h1><a href='{{site.posts.first.url}}'>{{site.posts.first.title}}</a></h1>
+    {{ site.posts.first.date | date_to_string }}
+    <h2><a href='{{site.posts.first.url}}'>{{site.posts.first.title}}</a></h2>
     <div class='body'>{{ site.posts.first.content }}</div>
 </div>
 <!--
-<h1>emesene 2 needs YOU!</h1>
+<h2>emesene 2 needs YOU!</h2>
     <p>The emesene team is trying to bring the awesomeness to a new level
    but we're short on manpower so we need your help to deliver a new
    version of your favourite im-application! (which is now not limited
